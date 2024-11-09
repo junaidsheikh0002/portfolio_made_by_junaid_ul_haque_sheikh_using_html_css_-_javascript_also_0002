@@ -1,0 +1,144 @@
+/* Global Styles */
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* Centering the Body Content */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Navbar Styles */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Typing Animation */
+
+#typing-animation {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) infinite;
+}
+
+
+/* Keyframes for Typing and Cursor Animation */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#typing-animation:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+    animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing-cursor {
+    from {
+        width: 5px;
+    }
+    to {
+        width: 0;
+    }
+}
+
+
+/* Hover Zoom Effect for Project Images */
+
+.zoom-effect {
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+
+/* Skills Section Progress Bars */
+
+.skill-mf .progress {
+    margin: 0.5rem 0 1.2rem;
+    border-radius: 0;
+    height: 0.7rem;
+}
+
+.skill-mf .progress .progress-bar {
+    height: 0.7rem;
+    background-color: #ffbd39;
+}
+
+
+/* Circular Profile Image with Border */
+
+.about-img .image-round {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #ffbd39;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-img .image-round img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* About Section Box Shadow and Padding */
+
+.about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+    margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+    margin-left: 10px;
+}
